@@ -1,0 +1,35 @@
+1
+1
+
+
+
+Input File for Perturbation
+
+*******************************************
+In Non-Linearised Case: 
+*******************************************
+FORMAT:
+
+pertamp
+
+where
+pertamp determines the perturbation amplitude, i.e., we use pertamp*SteadyState as initial the condition
+
+
+*******************************************
+In Linearised Case: 
+*******************************************
+FORMAT:
+
+perttype
+j (cv)
+
+where
+perttype gives type of perturbation:
+	0 w^j * varphi(E,L)
+	1 w^j * varphi'(E,L) 
+	2 sqrt(|r^j+w^j|) * varphi'(E,L)
+	3 sqrt(|r^j+w^j|) * \varphi'(E,L) * chi(E,L), where chi(E,L) smoothly vanishes close to E=EminL with parameter cv, cf. below
+j is exponent appearing in all pertubation types
+cv is parameter for pertubation type 3; chi(E,L) vanishes for E <= EminL + cv*(E_0-U_0(0)), chi(E,L) = 1 elsewhere
+	for other perturbation types, cv is not needed

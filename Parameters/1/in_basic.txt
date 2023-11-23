@@ -1,0 +1,7 @@
+1
+
+
+Basic Input File determining which algorithm to run.
+0 -> PIC for (non-linearised) VP System
+1 -> PIC for (full) linearised VP System
+2 -> PIC for Pure Transport System

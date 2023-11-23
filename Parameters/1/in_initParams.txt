@@ -1,0 +1,19 @@
+.001 100 50
+20
+0
+
+
+Initialisation Parameter Input File, in FORMAT
+
+dr usteps asteps
+min_parts_mio
+fromFile
+
+where
+dr is radial step size used for initialisation
+usteps is (maximal) amount of u-steps used for initialisation at each fixed radius
+asteps is amount of alpha-steps used for initialisation at each fixed (r,u)-pair
+min_parts_mio gives minimal amount of particles in millions we use;
+	increase usteps and asteps to achieve this number
+fromFile determines whether we read in entire particles from particle file
+	0 means that particles are created in this very simulations, 1 means that we are reading them from a particle file

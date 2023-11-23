@@ -1,0 +1,19 @@
+1. 0. 0. -1.
+1e-7
+
+
+
+Steady State (Equilibrium) Input File determining the underlying Steady State
+FORMAT:
+
+k ell L0 kappa
+drst
+
+where
+k is polytropic exponent
+	choosing k < 0 gives the King model (in this case we ignore ell and L0)
+ell is other polytropic exponent
+L0 is lower bound on L-values
+kappa is steady state parameter
+	choosing kappa < 0 means that kappa is chosen s.t. Rmax=1 (in cases where the Eddington-Ritter relation applies)
+drst is radial step size used for the steady state construction
