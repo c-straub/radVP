@@ -1,18 +1,20 @@
-# radVP
-Code used for the doctoral thesis "Pulsating Galaxies" by Christopher Straub.
+# radVP : *Simulating the spherically symmetric gravitational Vlasov-Poisson system*
+by Christopher Straub
+> This is the code used for the numerical analysis conducted in Chapter 8 of the doctoral thesis 'Pulsating Galaxies' as well as for the paper 'Numerical experiments on stationary, oscillating, and damped galaxy models'. 
 
+## Citation
+If you would use, adapt, or extend this code, its author would be most pleased. To let him know that you have done so, please cite the doctoral thesis in which the code was originally conceived.
+```
+@article{Straub24
+    dd
+}
+```
 
+## Use Cases
+The code can be used to numerically compute steady states of the spherically symmetric gravitational Vlasov-Poisson system and their radial periods.
+In addition, it includes Particle-In-Cell simulations of the linearised and non-linearised radial Vlasov-Poisson system.
 
-
-This is the code used for the numerical analysis conducted in Chapter 8 of the doctoral thesis "Pulsating Galaxies" by Christopher Straub, 2023, @ University of Bayreuth.
-It can be used to numerically compute steady states of the spherically symmetric gravitational Vlasov-Poisson system and their radial periods.
-In addition, it includes Particle-In-Cell simulations of the Linearised and Non-Linearised Radial Vlasov-Poisson System.
-
-If you use the code in its current form or develop it further for some scientific work, I would be very delighted. 
-In this case, it would be greatly appreciated if you would reference my doctoral thesis.
-
-------------------------------------------------------------------
-
+## Technical Instructions
 The code was written in Code::Blocks 20.03 and compiled with C++17.
 A makefile we used for compilation (under Ubuntu 18.04, g++ version 7.5.0) is included in a separate folder.
 
@@ -22,7 +24,7 @@ The different parameters are described in detail in these files; see also the ex
 
 The five parameter files in the main folder lead to a simulation of the linearised VP for the steady state k=1=Rmax and initial condition w*phi'(E).
 In the folder "Parameters", we have included further parameter files.
-The first ones result in a similar simulation, but with better numerical parameters; these paramters were actually used to create the plots at the start of Section 8.3.
+The first ones result in a similar simulation, but with better numerical parameters; these paramters were actually used to create the plots at the start of Section 8.3 of the thesis.
 The second ones initiate a simulation of the non-linearised VP with initial condition close to the isotropic polytrope k=1=Rmax; these parameters were used to create the plots at the start of Section 8.4.
 
 The outputs of the particle-in-cell simulations get printed in various output files, all having the prefix "out_". 
