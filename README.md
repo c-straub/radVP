@@ -6,13 +6,20 @@ by Christopher Straub
 If you would use, adapt, or extend this code, its author would be most pleased. To let him know that you have done so, please cite the doctoral thesis in which the code was originally conceived.
 ```
 @article{Straub24
-    dd
+    title = {Pulsating Galaxies},
+    author = {Christopher Straub},
+    school = {University of Bayreuth},
+    year = 2024,
+    doi = {https://doi.org/10.15495/EPub_UBT_00007639},
 }
 ```
 
-## Use Cases
+## Uses
 The code can be used to numerically compute steady states of the spherically symmetric gravitational Vlasov-Poisson system and their radial periods.
 In addition, it includes Particle-In-Cell simulations of the linearised and non-linearised radial Vlasov-Poisson system.
+
+## Style of the Code
+The code is written in C++ and is kept as simple/non-sophisticated as possible. In particular, no specialised programming libraries are used, everything is written from scratch. This is done so that the code is also understandable for less programming experienced readers.
 
 ## Technical Instructions
 The code was written in Code::Blocks 20.03 and compiled with C++17.
