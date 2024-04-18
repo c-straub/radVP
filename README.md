@@ -5,7 +5,7 @@ by Christopher Straub
 ## Citation
 If you would use, adapt, or extend this code, its author would be most pleased. To let him know that you have done so, please cite the doctoral thesis in which the code was originally conceived.
 ```
-@article{Straub24
+@phdthesis{Straub24,
     title = {Pulsating Galaxies},
     author = {Christopher Straub},
     school = {University of Bayreuth},
