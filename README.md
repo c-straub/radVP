@@ -1,6 +1,6 @@
 # radVP : *Simulating the spherically symmetric gravitational Vlasov-Poisson system*
 by Christopher Straub
-> This is the code used for the numerical analysis conducted in Chapter 8 of the doctoral thesis 'Pulsating Galaxies' as well as for the paper 'Numerical experiments on stationary, oscillating, and damped galaxy models'. 
+> This is the code used for the numerical analysis conducted in Chapter 8 of the doctoral thesis 'Pulsating Galaxies' as well as for the paper 'Numerical experiments on stationary, oscillating, and damped spherical galaxy models'. 
 
 ## Citation
 If you would use, adapt, or extend this code, its author would be most pleased. To let him know that you have done so, please cite the doctoral thesis in which the code was originally conceived.
