@@ -1,16 +1,28 @@
 # radVP : *Simulating the spherically symmetric gravitational Vlasov-Poisson system*
-by Christopher Straub
-> This is the code used for the numerical analysis conducted in Chapter 8 of the doctoral thesis 'Pulsating Galaxies' as well as for the paper 'Numerical experiments on stationary, oscillating, and damped spherical galaxy models'. 
+> by [Christopher Straub](https://christopher-straub.com/)
+
+This is the code used for the numerical analysis conducted in Chapter 8 of the doctoral thesis [Pulsating Galaxies](https://doi.org/10.15495/EPub_UBT_00007639) as well as for the paper [Numerical experiments on stationary, oscillating, and damped spherical galaxy models](https://doi.org/10.1016/j.physd.2024.134351). 
 
 ## Citation
-If you would use, adapt, or extend this code, its author would be most pleased. To let him know that you have done so, please cite the doctoral thesis in which the code was originally conceived.
+If you would use, adapt, or extend this code, its author would be most pleased. To let him know that you have done so, please cite the doctoral thesis in which the code was originally conceived, the paper based on it, or both.
 ```
 @phdthesis{Straub24,
     title = {Pulsating Galaxies},
     author = {Christopher Straub},
     school = {University of Bayreuth},
-    year = 2024,
-    doi = {https://doi.org/10.15495/EPub_UBT_00007639},
+    year = {2024},
+    doi = {https://doi.org/10.15495/EPub_UBT_00007639}
+}
+```
+```
+@article{Straub24-2,
+    title = {Numerical experiments on stationary, oscillating, and damped spherical galaxy models},
+    author = {Christopher Straub},
+    journal = {Physica D: Nonlinear Phenomena},
+    volume = {470},
+    pages = {134351},
+    year = {2024},
+    doi = {https://doi.org/10.1016/j.physd.2024.134351}
 }
 ```
 
@@ -37,11 +49,15 @@ The second ones initiate a simulation of the non-linearised VP with initial cond
 The outputs of the particle-in-cell simulations get printed in various output files, all having the prefix "out_". 
 
 In the parallelised parts (in particular, in the PIC simulations), the program uses 200 threads in parallel.
-This number can be changed in the ..."_barrier.h" Header Files.
+This number can be changed in the ..."_barrier.h" header files.
 
 
 The numerical simulations of a steady state itself and its radial periods have to be called by writing suitable function calls in main.cpp.
 Examples for how to call these functions -- again in the case of the istropic polytrope k=1=Rmax -- are provided in main.cpp ; they are currently commented out.
+
+## Contact
+Because the author has changed his field of research, this code is no longer maintained by him. 
+Should there still be any questions regarding the code, the author's current contact details can be found on his personal website [https://christopher-straub.com](https://christopher-straub.com/).
 
 
 
